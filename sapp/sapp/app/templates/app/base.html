@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WhiteHats |{% block header %}{% endblock %}</title>
+    <title>WhiteHats |{% block header %} Index {% endblock %}</title>
 </head>
 <body>
-<section>
+
+
+{% block content %}
+    <section>
    <h1>White_Hats Team Members</h1>
     <hr />
     <ul>
@@ -18,22 +21,18 @@
     </ul>
     <br />
 
+<hr />
+<h1> Here is all the new students</h1>
+{{ student_list }}
+<ul>
+{% for student in student_list %}
+   <li>Name: {{ student.Name }} <-> ID: {{ student.ID }}</li>
+{% endfor %}
+
+</ul>
 
 </section>
-
-
-
-{% block content %}
 {% endblock %}
-
-
-
-
-
-
-
-
-
 
 
 <section>

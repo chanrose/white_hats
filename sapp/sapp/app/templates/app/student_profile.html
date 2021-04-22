@@ -1,0 +1,9 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+ <h1> Hello! {{ student.Name }} How are you :) I born in <br />{{ student.DoB }}</h1>
+
+
+
+<a href="{% url 'app:index' %}"> This is the homepage</a>
+{% endblock %}
