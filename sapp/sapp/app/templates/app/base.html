@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhiteHats |{% block header %}{% endblock %}</title>
+</head>
+<body>
+<section>
+   <h1>White_Hats Team Members</h1>
+    <hr />
+    <ul>
+        <li><a href="{% url 'app:dan' %}">Dan</a></li>
+        <li><a href="{% url 'app:svengates' %}">SvenGates</a></li>
+        <li><a href="{% url 'app:yilin' %}">Yilin</a></li>
+        <li><a href="{% url 'app:tarun' %}">Tarun</a></li>
+        <li><a href="{% url 'app:enowell'%}">Enowell</a></li>
+        <li><a href="{% url 'app:index1' %}">Eh Doh Wah</a></li>
+    </ul>
+    <br />
+
+
+</section>
+
+
+
+{% block content %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <br />
+    <hr />
+    <h1> THis is a footer</h1>
+</section>
+</body>
+</html>

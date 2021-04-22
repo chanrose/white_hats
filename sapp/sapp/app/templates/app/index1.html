@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <h1 style="text-align:center;">Hello World!</h1><br>
+    <hr>
+    <p>Hope you are doing well</p>
+    <a href="{% url 'app:index' %}">
+        <button>Home</button>
+    </a>
+    <h2>Please explore my friends' Pages</h2>
+    <a href="{% url 'app:dan' %}"> Dan's Page</a>
+    <a href="{% url 'app:svengates' %}"> Abel's Page</a>
+    <a href="{% url 'app:yilin' %}"> Yilin's Page</a>
+    <a href="{% url 'app:enowell' %}"> Enowell's Page</a>
+    <a href="{% url 'app:tarun' %}"> Tarun's Page</a>
+{% endblock %}

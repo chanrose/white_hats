@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+{% block header%} Tarun {% endblock%}
+
+{% block content %}
+    <header>
+      <h1>This is Tarun's Page!</h1>
+      <h2>(Work In Progress)</h2>
+    </header>
+    <p>Hello World</p>
+    <a href="{% url 'app:index' %}">
+        <button>Click to go back home</button>
+    </a>
+    <h3>Explore other pages:</h3>
+    <a href="{% url 'app:dan' %}">Dan's Page</a><br>
+    <a href="{% url 'app:svengates' %}">Abel's Page</a><br>
+    <a href="{% url 'app:yilin' %}">Yilin's Page</a><br>
+    <a href="{% url 'app:enowell' %}">Enowell's Page</a><br>
+    <a href="{% url 'app:index1' %}">Eh Doh Wah's Page</a><br>
+
+{% endblock %}
